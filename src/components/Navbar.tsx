@@ -73,6 +73,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             {navItems.slice(2, 5).map((item) => (
               <Link
+                key={item.to}
                 to={item.to}
                 className={`text-lg ${
                   location.pathname === item.to

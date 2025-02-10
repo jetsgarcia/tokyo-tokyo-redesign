@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="border-primary fixed top-0 right-0 left-0 z-50 flex items-center justify-between border-b bg-white px-4 md:hidden">
+      <div className="border-primary fixed top-0 right-0 left-0 z-50 flex items-center justify-between border-b bg-white bg-[url(../src/assets/tokyo-tokyo-bg.jpg)] px-4 md:hidden">
         <Link to="/">
           <img src="/tokyo-tokyo-logo.png" alt="Tokyo Tokyo logo" width={180} />
         </Link>
@@ -56,7 +56,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navbar */}
-      <div className="fixed top-0 right-0 left-0 z-50 hidden border-b border-gray-300 bg-white px-8 md:block">
+      <div className="border-primary fixed top-0 right-0 left-0 z-50 hidden border-b bg-white bg-[url(../src/assets/tokyo-tokyo-bg.jpg)] px-8 md:block">
         <div className="flex items-center justify-between">
           {/* Left Side: Logo & Navigation */}
           <div className="flex items-center gap-6">

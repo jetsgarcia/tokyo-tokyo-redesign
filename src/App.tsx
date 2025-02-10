@@ -7,10 +7,12 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
-      </Routes>
+      <div className="mt-[16.95vw] mb-24 h-screen md:mt-[85px] md:mb-0">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+      </div>
     </div>
   );
 }

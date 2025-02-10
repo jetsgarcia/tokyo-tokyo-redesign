@@ -15,15 +15,33 @@ export default function Navbar() {
   return (
     <>
       {/* Mobile Navbar */}
-      <div className="fixed right-0 bottom-0 left-0 rounded-tl-2xl rounded-tr-2xl border-t border-gray-300 bg-white p-2 md:hidden">
+      <div className="border-primary fixed top-0 right-0 left-0 z-50 flex items-center justify-between border-b bg-white px-4 md:hidden">
+        <Link to="/">
+          <img src="/tokyo-tokyo-logo.png" alt="Tokyo Tokyo logo" width={180} />
+        </Link>
+        <Link
+          to="/account"
+          className={`text-lg ${
+            location.pathname === "/account" ||
+            location.pathname.startsWith("/account/")
+              ? "text-primary font-semibold"
+              : "hover:text-primary text-gray-600"
+          }`}
+        >
+          <UserCircle />
+        </Link>
+      </div>
+
+      <div className="border-primary fixed right-0 bottom-0 left-0 z-50 rounded-tl-2xl rounded-tr-2xl border-t bg-white p-2 md:hidden">
         <nav>
           <ul className="flex items-center justify-between">
-            {navItems.map((item) => (
+            {navItems.slice(0, 4).map((item) => (
               <li key={item.to} className="flex-1 text-center">
                 <Link
                   to={item.to}
                   className={`flex flex-col items-center gap-2 p-2 text-sm ${
-                    location.pathname === item.to
+                    location.pathname === item.to ||
+                    location.pathname.startsWith(`${item.to}/`)
                       ? "text-primary font-semibold"
                       : "text-gray-600"
                   }`}
@@ -38,7 +56,7 @@ export default function Navbar() {
       </div>
 
       {/* Desktop Navbar */}
-      <div className="fixed top-0 right-0 left-0 hidden border-b border-gray-300 bg-white px-8 md:block">
+      <div className="fixed top-0 right-0 left-0 z-50 hidden border-b border-gray-300 bg-white px-8 md:block">
         <div className="flex items-center justify-between">
           {/* Left Side: Logo & Navigation */}
           <div className="flex items-center gap-6">

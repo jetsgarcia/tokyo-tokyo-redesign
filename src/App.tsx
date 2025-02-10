@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <div className="mt-[16.95vw] h-screen pb-24 md:mt-[85px] md:pb-0">
+      <div className="mt-[16.95vw] pb-24 md:mt-[85px] md:pb-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />

@@ -74,7 +74,8 @@ export default function Navbar() {
                     <Link
                       to={item.to}
                       className={`text-lg ${
-                        location.pathname === item.to
+                        location.pathname === item.to ||
+                        location.pathname.startsWith(`${item.to}/`)
                           ? "text-primary font-semibold"
                           : "hover:text-primary text-gray-600"
                       }`}
@@ -94,7 +95,8 @@ export default function Navbar() {
                 key={item.to}
                 to={item.to}
                 className={`text-lg ${
-                  location.pathname === item.to
+                  location.pathname === item.to ||
+                  location.pathname.startsWith(`${item.to}/`)
                     ? "text-primary font-semibold"
                     : "hover:text-primary text-gray-600"
                 }`}

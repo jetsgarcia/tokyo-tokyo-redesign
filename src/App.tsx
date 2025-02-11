@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import Home from "@/pages/home/Home";
 import Navbar from "@/components/Navbar";
 import Menu from "@/pages/menu/Menu";
+import Bento from "@/pages/menu/subroutes/bento/BentoSection";
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/menu/bento" element={<Bento />} />
         </Routes>
       </div>
     </div>

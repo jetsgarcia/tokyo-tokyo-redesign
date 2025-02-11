@@ -1,14 +1,14 @@
 import { Link } from "react-router";
-import Katsu from "@/assets/menu-categories/katsu.png";
-import Bento from "@/assets/menu-categories/bento.png";
-import Donburi from "@/assets/menu-categories/donburi.png";
-import Ramen from "@/assets/menu-categories/ramen.png";
-import Onigiri from "@/assets/menu-categories/onigiri.png";
-import Burger from "@/assets/menu-categories/burger.png";
-import Sides from "@/assets/menu-categories/sides.png";
-import Drinks from "@/assets/menu-categories/drinks.png";
-import Desserts from "@/assets/menu-categories/desserts.png";
-import Tray from "@/assets/menu-categories/tray.png";
+import Katsu from "./subroutes/katsu/big-chicken-katsu-classic-solo/images/big-chicken-katsu-classic-solo.png";
+import Bento from "./subroutes/bento/prawn-and-veggie-tempura-bento/images/prawn-and-veggie-tempura-bento.png";
+import Donburi from "./subroutes/donburi/beef-gyudon-donburi/images/beef-gyudon-donburi.png";
+import Ramen from "./subroutes/ramen/cheesy-beef-ramen/images/cheesy-beef-ramen.png";
+import Onigiri from "./subroutes/onigiri/kani-wasabi-onigiri/images/kani-wasabi-onigiri.png";
+import Burger from "./subroutes/burger/wagyu-cheeseburger/images/wagyu-cheeseburger.png";
+import Sides from "./subroutes/sides/tempura-dragon-maki/images/tempura-dragon-maki.png";
+import Drinks from "./images/drinks.png"; // Images is in separate directory because it is a customized image
+import Desserts from "./subroutes/desserts/revel-bar/images/revel-bar.png";
+import Tray from "./subroutes/tray/beef-misono-and-chicken-teriyaki-tray/images/beef-misono-and-chicken-teriyaki-tray.png";
 
 export default function Menu() {
   const categories = [

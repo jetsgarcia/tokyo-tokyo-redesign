@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router";
 import Home from "@/pages/home/Home";
 import Navbar from "@/components/Navbar";
 import Menu from "@/pages/menu/Menu";
-import Bento from "@/pages/menu/subroutes/bento/BentoSection";
-import PrawnAndVeggieTempuraBento from "./pages/menu/subroutes/bento/prawn-and-veggie-tempura-bento/PrawnAndVeggieTempuraBento";
+import Bento from "@/pages/menu/bento/BentoSection";
+import PrawnAndVeggieTempuraBento from "@/pages/menu/bento/prawn-and-veggie-tempura-bento/PrawnAndVeggieTempuraBento";
 
 export default function App() {
   return (

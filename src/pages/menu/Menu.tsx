@@ -1,14 +1,14 @@
 import { Link } from "react-router";
-import Katsu from "./katsu/big-chicken-katsu-classic-solo/_images/big-chicken-katsu-classic-solo.png";
-import Bento from "./bento/prawn-and-veggie-tempura-bento/_images/prawn-and-veggie-tempura-bento.png";
-import Donburi from "./donburi/beef-gyudon-donburi/_images/beef-gyudon-donburi.png";
-import Ramen from "./ramen/cheesy-beef-ramen/_images/cheesy-beef-ramen.png";
-import Onigiri from "./onigiri/kani-wasabi-onigiri/_images/kani-wasabi-onigiri.png";
-import Burger from "./burger/wagyu-cheeseburger/_images/wagyu-cheeseburger.png";
-import Sides from "./sides/tempura-dragon-maki/_images/tempura-dragon-maki.png";
-import Drinks from "./_images/drinks.png"; // Images is in separate directory because it is a customized image
-import Desserts from "./desserts/revel-bar/_images/revel-bar.png";
-import Tray from "./tray/beef-misono-and-chicken-teriyaki-tray/_images/beef-misono-and-chicken-teriyaki-tray.png";
+import Katsu from "@/assets/menu/big-chicken-katsu-classic-solo.png";
+import Bento from "@/assets/menu/prawn-and-veggie-tempura-bento.png";
+import Donburi from "@/assets/menu/beef-gyudon-donburi.png";
+import Ramen from "@/assets/menu/cheesy-beef-ramen.png";
+import Onigiri from "@/assets/menu/kani-wasabi-onigiri.png";
+import Burger from "@/assets/menu/wagyu-cheeseburger.png";
+import Sides from "@/assets/menu/tempura-dragon-maki.png";
+import Drinks from "@/assets/drinks.png"; // Images is in separate directory because it is a customized image used only in categories page
+import Desserts from "@/assets/menu/revel-bar.png";
+import Tray from "@/assets/menu/beef-misono-and-chicken-teriyaki-tray.png";
 
 export default function Menu() {
   const categories = [

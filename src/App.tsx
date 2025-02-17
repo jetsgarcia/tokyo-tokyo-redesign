@@ -12,14 +12,12 @@ export default function App() {
       <div className="mt-[69.9px] pb-24 md:mt-[85px] md:pb-0">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="menu" element={<Menu />}>
-            <Route path="bento" element={<Bento />}>
-              <Route
-                path="prawn-and-veggie-tempura-bento"
-                element={<PrawnAndVeggieTempuraBento />}
-              />
-            </Route>
-          </Route>
+          <Route path="menu" element={<Menu />} />
+          <Route path="/menu/bento" element={<Bento />} />
+          <Route
+            path="/menu/bento/prawn-and-veggie-tempura-bento"
+            element={<PrawnAndVeggieTempuraBento />}
+          />
         </Routes>
       </div>
     </div>

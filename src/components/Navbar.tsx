@@ -64,7 +64,7 @@ export default function Navbar() {
               <img
                 src="/tokyo-tokyo-logo.png"
                 alt="Tokyo Tokyo logo"
-                width={220}
+                width={180}
               />
             </Link>
             <nav>

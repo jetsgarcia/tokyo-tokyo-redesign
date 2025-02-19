@@ -3,7 +3,7 @@ import Katsu from "@/assets/menu/big-chicken-katsu-classic-solo.png";
 import Bento from "@/assets/menu/prawn-and-veggie-tempura-bento.png";
 import Donburi from "@/assets/menu/beef-gyudon-donburi.png";
 import Ramen from "@/assets/menu/cheesy-beef-ramen.png";
-import Onigiri from "@/assets/menu/kani-wasabi-onigiri.png";
+import WagyuCubes from "@/assets/menu/wagyu-cubes.png";
 import Burger from "@/assets/menu/wagyu-cheeseburger.png";
 import Sides from "@/assets/menu/tempura-dragon-maki.png";
 import Drinks from "@/assets/drinks.png"; // Images is in separate directory because it is a customized image used only in categories page
@@ -16,8 +16,13 @@ export default function Menu() {
     { to: "/menu/bento", label: "Bento", src: Bento, alt: "Bento" },
     { to: "/menu/donburi", label: "Donburi", src: Donburi, alt: "Donburi" },
     { to: "/menu/ramen", label: "Ramen", src: Ramen, alt: "Ramen" },
-    { to: "/menu/onigiri", label: "Onigiri", src: Onigiri, alt: "Onigiri" },
-    { to: "/menu/burger", label: "Burger", src: Burger, alt: "Burger" },
+    {
+      to: "/menu/shared-platter",
+      label: "Shared Platter",
+      src: WagyuCubes,
+      alt: "Wagyu Cubes",
+    },
+    { to: "/menu/snacks", label: "Snacks", src: Burger, alt: "Burger" },
     { to: "/menu/sides", label: "Sides", src: Sides, alt: "Sides" },
     { to: "/menu/drinks", label: "Drinks", src: Drinks, alt: "Drinks" },
     { to: "/menu/desserts", label: "Desserts", src: Desserts, alt: "Desserts" },

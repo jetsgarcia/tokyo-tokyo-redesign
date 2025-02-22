@@ -22,7 +22,7 @@ export default function Dish({
   const [drinkSize, setDrinkSize] = useState<DrinkSize>("");
 
   return (
-    <div className="p-4 pb-16 md:m-auto md:max-w-[70rem] md:px-8">
+    <div className="px-4 pt-8 pb-16 md:m-auto md:max-w-[70rem] md:px-8">
       <div className="flex flex-col gap-4 md:gap-8">
         <div className="space-y-4 md:flex md:w-full md:gap-8 md:space-y-0">
           <div className="grid place-items-center rounded-lg border border-gray-300 bg-[url(../src/assets/tokyo-tokyo-bg.jpg)] md:w-1/2">

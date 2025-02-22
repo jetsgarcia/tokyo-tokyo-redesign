@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Menu from "@/pages/menu/Menu";
 import Bento from "@/pages/menu/bento/BentoSection";
 import PrawnAndVeggieTempuraBento from "@/pages/menu/bento/prawn-and-veggie-tempura-bento/PrawnAndVeggieTempuraBento";
+import BeefYakinikuBento from "./pages/menu/bento/beef-yakiniku-bento/beef-yakiniku-bento";
 
 export default function App() {
   return (
@@ -17,6 +18,10 @@ export default function App() {
           <Route
             path="/menu/bento/prawn-and-veggie-tempura-bento"
             element={<PrawnAndVeggieTempuraBento />}
+          />
+          <Route
+            path="/menu/bento/beef-yakiniku-bento"
+            element={<BeefYakinikuBento />}
           />
         </Routes>
       </div>

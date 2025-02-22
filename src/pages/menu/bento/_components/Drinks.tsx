@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { DrinkSize } from "../PrawnAndVeggieTempuraBento";
+import { DrinkSize } from "../prawn-and-veggie-tempura-bento/PrawnAndVeggieTempuraBento";
 import RedIcedTea from "@/assets/menu/red-iced-tea.png";
 import { Info } from "lucide-react";
 

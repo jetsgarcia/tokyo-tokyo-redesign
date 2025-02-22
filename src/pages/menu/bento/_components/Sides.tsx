@@ -1,8 +1,8 @@
-import CaliforniaMaki from "@/assets/menu/california-maki.png";
-import MisoSoup from "@/assets/menu/miso-soup.png";
-import Rice from "@/assets/menu/rice.png";
-import Gyoza from "@/assets/menu/gyoza.png";
-import TempuraDragonMaki from "@/assets/menu/tempura-dragon-maki.png";
+import CaliforniaMaki from "@/assets/menu/sides/california-maki.png";
+import MisoSoup from "@/assets/menu/sides/miso-soup.png";
+import Rice from "@/assets/menu/sides/rice.png";
+import Gyoza from "@/assets/menu/sides/gyoza.png";
+import TempuraDragonMaki from "@/assets/menu/sides/tempura-dragon-maki.png";
 
 import { Info } from "lucide-react";
 

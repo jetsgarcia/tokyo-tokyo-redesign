@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { DrinkSize } from "../prawn-and-veggie-tempura-bento/PrawnAndVeggieTempuraBento";
-import RedIcedTea from "@/assets/menu/red-iced-tea.png";
+import { DrinkSize } from "./Dish";
+import RedIcedTea from "@/assets/menu/drinks/red-iced-tea.png";
 import { Info } from "lucide-react";
 
 const drinks = [{ src: RedIcedTea, alt: "Red Iced Tea", name: "Red Iced Tea" }];

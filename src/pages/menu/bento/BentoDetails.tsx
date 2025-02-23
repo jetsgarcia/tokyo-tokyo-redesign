@@ -6,22 +6,18 @@ import NotFound from "@/components/NotFound";
 export default function BentoDetails() {
   const { bentoId } = useParams();
 
+  const bento = bentoCollection.find((bento) => bento.id === bentoId);
+
+  if (!bento) {
+    return <NotFound />;
+  }
+
   return (
-    <div>
-      {bentoCollection.map((bento) => {
-        if (bento.id === bentoId) {
-          return (
-            <Dish
-              imageSource={bento.imageSource}
-              dishName={bento.name}
-              price={bento.price}
-              dishDescription={bento.description}
-            />
-          );
-        } else {
-          return <NotFound />;
-        }
-      })}
-    </div>
+    <Dish
+      imageSource={bento.imageSource}
+      dishName={bento.name}
+      price={bento.price}
+      dishDescription={bento.description}
+    />
   );
 }

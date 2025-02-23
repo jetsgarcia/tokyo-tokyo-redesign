@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import { bentoCollection } from "@/assets/menu/bento/bentoCollection";
 import Dish from "./_components/Dish";
+import NotFound from "@/components/NotFound";
 
 export default function BentoDetails() {
   const { bentoId } = useParams();
@@ -17,6 +18,8 @@ export default function BentoDetails() {
               dishDescription={bento.description}
             />
           );
+        } else {
+          return <NotFound />;
         }
       })}
     </div>
